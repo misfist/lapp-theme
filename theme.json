@@ -115,5 +115,27 @@
 		}
 	},
 	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "sidebar",
+			"name": "sidebar",
+			"title": "Sidebar"
+		},
+		{
+			"area": "sidebar-home",
+			"name": "sidebar-home",
+			"title": "Sidebar (Home)"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
 }
