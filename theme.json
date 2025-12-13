@@ -2,62 +2,77 @@
 	"settings": {
 		"color": {
 			"palette": [
-				{
-					"color": "#ffffff",
-					"name": "Base",
-					"slug": "base"
-				},
-				{
-					"color": "#F0F0F0",
-					"name": "Base / Two",
-					"slug": "base-2"
-				},
-				{
-					"color": "#DDDDDD",
-					"name": "Base / Three",
-					"slug": "base-3"
-				},
-				{
-					"color": "#CCCCCC",
-					"name": "Base / Four",
-					"slug": "base-4"
-				},
-				{
-					"color": "#949494",
-					"name": "Base / Five",
-					"slug": "base-5"
-				},
-				{
-					"color": "#1E1E1E",
-					"name": "Contrast",
-					"slug": "contrast"
-				},
-				{
-					"color": "#3E3E3E",
-					"name": "Contrast / Two",
-					"slug": "contrast-2"
-				},
-				{
-					"color": "#6C6C6C",
-					"name": "Contrast / Three",
-					"slug": "contrast-3"
-				},
-				{
-					"color": "#00ada4",
-					"name": "Accent",
-					"slug": "accent"
-				},
-				{
-					"color": "#e8266b",
-					"name": "Accent / Two",
-					"slug": "accent-2"
-				},
-				{
-					"color": "#ffb700",
-					"name": "Accent / Three",
-					"slug": "accent-3"
-				}
-			]
+                {
+                    "name": "Base",
+                    "slug": "base",
+                    "color": "#ffffff"
+                },
+                {
+                    "name": "Base 2",
+                    "slug": "base-2",
+                    "color": "#F0F0F0"
+                },
+                {
+                    "name": "Base 3",
+                    "slug": "base-3",
+                    "color": "#DDDDDD"
+                },
+                {
+                    "name": "Base 4",
+                    "slug": "base-4",
+                    "color": "#cccccc"
+                },
+                {
+                    "name": "Base 4",
+                    "slug": "base-4",
+                    "color": "#949494"
+                },
+                {
+                    "name": "Contrast",
+                    "slug": "contrast",
+                    "color": "#1E1E1E"
+                },
+                {
+                    "name": "Contrast 2",
+                    "slug": "contrast-2",
+                    "color": "#3E3E3E"
+                },
+                {
+                    "name": "Contrast 3",
+                    "slug": "contrast-3",
+                    "color": "#6C6C6C"
+                },
+                {
+                    "name": "Accent",
+                    "slug": "accent",
+                    "color": "#00ada4"
+                },
+                {
+                    "name": "Accent 2",
+                    "slug": "accent-2",
+                    "color": "#e8266b"
+                },
+                {
+                    "name": "Accent 3",
+                    "slug": "accent-3",
+                    "color": "#ffb700"
+                },
+                {
+                    "name": "Accent 4",
+                    "slug": "accent-4",
+                    "color": "#c3dc19"
+                },
+                {
+                    "name": "Accent 5",
+                    "slug": "accent-5",
+                    "color": "#07915d"
+                },
+                {
+                    "name": "Accent 6",
+                    "slug": "accent-6",
+                    "color": "#e5370e"
+                }
+            ]
 		},
 		"custom": {
 			"className": "lapp"
@@ -67,7 +82,25 @@
 			"wideSize": "1216px"
 		},
 		"typography": {
-			"fluid": true
+			"dropCap": true,
+			"fluid": true,
+			"fontFamilies": [
+                {
+                    "name": "Lora",
+                    "slug": "lora",
+                    "fontFamily": "\"Lora\", \"Georgia\", \"serif\""
+                },
+                {
+                    "name": "Works Sans",
+                    "slug": "works-sans",
+                    "fontFamily": "\"Works Sans\", \"Helvetica\", \"sans-serif\""
+                },
+                {
+                    "name": "Staatliches",
+                    "slug": "staatliches",
+                    "fontFamily": "\"Staatliches\", sans-serif"
+                }
+            ]
 		}
 	},
 	"styles": {
@@ -78,40 +111,43 @@
 				},
 				"typography": {
 					"fontStyle": "normal",
-					"fontWeight": "600",
+					"fontWeight": "700",
 					"textTransform": "uppercase"
 				}
 			},
 			"core/pullquote": {
 				"color": {
-					"text": "var(--wp--preset--color--contrast-2)"
+					"text": "var( --wp--preset--color--contrast-2 )"
 				}
 			}
 		},
 		"elements": {
 			"button": {
 				"color": {
-					"background": "var(--wp--preset--color--accent-2)"
+					"background": "var( --wp--preset--color--accent-2 )"
+				},
+				"typography": {
+					"fontFamily": "var( --wp--preset--font-family--sans )"
 				}
 			},
 			"caption": {
 				"color": {
-					"text": "var(--wp--preset--color--base-5)"
+					"text": "var( --wp--preset--color--base-5 )"
 				}
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var( --wp--preset--font-family--fraunces )"
+					"fontFamily": "var( --wp--preset--font-family--serif )"
 				}
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var( --wp--preset--color--contrast )"
 				}
 			}
 		},
 		"typography": {
-			"fontFamily": "var( --wp--preset--font-family--nunito )"
+			"fontFamily": "var( --wp--preset--font-family--serif )"
 		}
 	},
 	"version": 3,
